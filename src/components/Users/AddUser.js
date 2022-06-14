@@ -21,6 +21,11 @@ const AddUser = (props) => {
 
         //log the input to console
         console.log(enteredUsername, enteredAge);
+
+        //update user list by adding new one
+        props.onAddUsers(enteredUsername, enteredAge);
+
+        //clear input date after adding
         setEnteredUsername('');
         setEnteredAge('');
     };
